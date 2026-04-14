@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdbool.h>
+#include <iostream>
 
 int main() {
     int soNguyen = 20;

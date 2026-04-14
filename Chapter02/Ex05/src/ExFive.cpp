@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 
 int main() {
     const int MAX_DIEM = 100;
@@ -11,3 +11,4 @@ int main() {
 
     return 0;
 }
+
