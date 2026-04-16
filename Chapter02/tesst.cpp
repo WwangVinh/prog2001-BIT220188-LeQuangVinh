@@ -1,22 +1,37 @@
-
 #include <stdio.h>
-int main() {
-    int x = 10;
 
-    //Outer block
-    {
-        int y = 20; // Variable 'y' is local to this blosk
-        printf(" Inside outer block: x = %d, y = %d\n", x, y);
 
-        //Inner block
-        {
-            int z = 30; // Variable 'z' is local to this blosk
-            printf("Inside outer block: x = %d, y = %d,z = %d\n", x, y, z);
-        }
 
+    //Ham su dung bien thuong
+    void incrementNormal() {
+        int counter = 0; // luon bij reset ve 0 moi khi goi ham
+        counter++;
+        printf("Bien thuong: %d\n", counter);
     }
 
-    printf("Outside all blocks: x = %d\n", x);
+    //Ham su dung bien static
+    void incrementStatic() {
+        static int counter = 0; // chi khoi tao 1 lan duy nhat sau do se giu gia tri
+        counter++;
+        printf("Bien Static: %d\n", counter);
+    }
 
-    return 0;
-}
+    int main() {
+
+        printf("Goi ham lan: 1\n");
+        incrementNormal();
+        incrementStatic();
+
+        printf("Goi ham lan: 2\n");
+        incrementNormal();
+        incrementStatic();
+
+        printf("Goi ham lan: 3\n");
+        incrementNormal();
+        incrementStatic();
+
+        return 0;
+
+
+
+    }
