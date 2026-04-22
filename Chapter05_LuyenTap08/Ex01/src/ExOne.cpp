@@ -16,8 +16,4 @@ int main() {
     printf("Ten : %s\n", sv1.ten);
 
     return 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ec0ae01b3c93594d512669cdec27b396be84ed56

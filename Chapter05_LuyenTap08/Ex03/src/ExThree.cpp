@@ -10,7 +10,7 @@ struct Owner {
 struct Car {
     char model[30];
     int nam;
-    struct Owner chuXe; // Lồng struct Owner vào đây
+    struct Owner chuXe; 
 };
 
 int main() {
